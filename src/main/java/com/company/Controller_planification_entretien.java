@@ -15,8 +15,12 @@ public class Controller_planification_entretien implements Plannification_entret
     }
 
     public boolean selection_consultant_recruteur(boolean consultant_dispo) throws NoConsultantFoundException {
-        if (true) return consultant_dispo;
-        else throw new Controller_planification_entretien.NoConsultantFoundException();
+        if (consultant_dispo) {
+            return consultant_dispo;
+        }
+        else {
+            throw new Controller_planification_entretien.NoConsultantFoundException();
+        }
     }
 
     public boolean dispo_consultant_recruteur(boolean consultant_dispo) {

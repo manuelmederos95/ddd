@@ -30,7 +30,7 @@ public class PlanificationEntretienTest {
     }
 
     /**Test de l'exception lors que la sélection des consultants renvoie null*/
-    @Test //(expected = Controller_planification_entretien.NoConsultantFoundException.class)
+    @Test (expected = Controller_planification_entretien.NoConsultantFoundException.class)
     public final void selectionConsultantManquantTest() throws Controller_planification_entretien.NoConsultantFoundException {
        plan.selection_consultant_recruteur(false);
     }
