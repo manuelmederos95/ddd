@@ -47,7 +47,7 @@ public class PlanificationEntretienTest {
         assertEquals(false, plan.dispo_consultant_recruteur(false) );
     }
 
-    /**Test si le candidat est disponible*/
+    /**Test si le candidat est disponible */
     @Test
     public final void testCandidatDispo() {
         assertEquals(true, plan.dispo_candidat(true) );
